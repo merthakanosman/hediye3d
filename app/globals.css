@@ -1278,14 +1278,14 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
   .stat-number { font-size: var(--fs-40); }
 
   .hero-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; min-height: 420px; }
-  .hero-left { padding: var(--s-5) var(--s-3) var(--s-5) var(--s-4); justify-content: flex-start; padding-top: var(--s-6); }
-  .hero-right { padding: var(--s-4) var(--s-4) var(--s-5) var(--s-3); min-height: unset; }
-  .hero h1 { font-size: clamp(13px, 3.8vw, 20px); }
-  .hero p.lede { font-size: var(--fs-12); margin-top: var(--s-3); }
-  .hero-ctas { flex-direction: column; gap: var(--s-2); margin-top: var(--s-4); }
-  .hero-ctas .btn { padding: 8px 12px; font-size: 11px; width: 100%; justify-content: center; }
-  .t-eyebrow { font-size: 10px; }
-  .hero-left-inner { max-width: 100%; }
+  .hero-left { padding: var(--s-4) var(--s-2) var(--s-4) var(--s-3); justify-content: flex-start; padding-top: var(--s-5); overflow: hidden; min-width: 0; }
+  .hero-right { padding: var(--s-4) var(--s-3) var(--s-4) var(--s-2); min-height: unset; min-width: 0; overflow: hidden; }
+  .hero h1 { font-size: clamp(11px, 3.2vw, 18px); word-break: keep-all; }
+  .hero p.lede { font-size: 10px; margin-top: var(--s-2); line-height: 1.4; }
+  .hero-ctas { flex-direction: column; gap: var(--s-1); margin-top: var(--s-3); }
+  .hero-ctas .btn { padding: 6px 10px; font-size: 10px; width: 100%; justify-content: center; box-sizing: border-box; }
+  .hero-left-inner { max-width: 100%; overflow: hidden; }
+  .t-eyebrow { font-size: 9px; margin-bottom: 8px !important; }
 }
 
 /* — WhatsApp FAB — */
