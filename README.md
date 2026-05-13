@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hediye3D
 
-## Getting Started
+Kişiselleştirilmiş 3D baskı ürünleri e-ticaret sitesi. Next.js 15 App Router ve TypeScript ile geliştirilmiştir.
 
-First, run the development server:
+## Özellikler
+
+- Ürün listeleme ve kategori filtreleme
+- Ürün detay sayfaları
+- Koleksiyon sayfası
+- Teklif alma formu (modal)
+- Sepet yönetimi (Context API)
+- İletişim formu
+- Tam responsive tasarım
+
+## Teknoloji Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Dil:** TypeScript
+- **Stil:** CSS Variables (Tailwind yok)
+- **State:** React Context API (Cart, Toast, Modal)
+- **Veri:** Static JSON data (backend yok)
+- **Fontlar:** Plus Jakarta Sans, Inter, JetBrains Mono
+
+## Sayfalar
+
+| Rota | Açıklama |
+|------|----------|
+| `/` | Ana sayfa — Hero, Kategoriler, Öne Çıkan Ürünler, CTA |
+| `/urunler` | Tüm ürünler + kategori filtresi |
+| `/urunler/[slug]` | Ürün detay sayfası |
+| `/koleksiyonlar` | Koleksiyon kartları |
+| `/hakkimizda` | Kurumsal sayfa |
+| `/iletisim` | İletişim formu ve bilgileri |
+
+## Kurulum
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Uygulama [http://localhost:3000](http://localhost:3000) adresinde açılır.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Design Tokens
 
-To learn more about Next.js, take a look at the following resources:
+```
+Krem yüzey:  #F4E8D0
+Mor:         #7C3AED
+Turuncu:     #F97316
+Gradient:    linear-gradient(135deg, #7C3AED 0%, #C534B0 45%, #F97316 100%)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tüm tokenlar `app/globals.css` dosyasında tanımlıdır.
