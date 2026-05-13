@@ -1257,7 +1257,7 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
   .cats { grid-template-columns: repeat(2, 1fr); }
   .products { grid-template-columns: repeat(2, 1fr); }
 
-  .hero-pages::after { display: none; }
+  .hero-pages::after { display: block; }
   .hero-quote { display: none; }
   .hero-nozzle { display: none; }
 
@@ -1277,9 +1277,15 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
 
   .stat-number { font-size: var(--fs-40); }
 
-  .hero-grid { grid-template-columns: 1fr; grid-template-rows: auto auto; }
-  .hero-left { padding: var(--s-5) var(--s-4) var(--s-4); }
-  .hero-right { padding: var(--s-3) var(--s-4) var(--s-5); min-height: 200px; }
+  .hero-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; min-height: 420px; }
+  .hero-left { padding: var(--s-5) var(--s-3) var(--s-5) var(--s-4); justify-content: flex-start; padding-top: var(--s-6); }
+  .hero-right { padding: var(--s-4) var(--s-4) var(--s-5) var(--s-3); min-height: unset; }
+  .hero h1 { font-size: clamp(13px, 3.8vw, 20px); }
+  .hero p.lede { font-size: var(--fs-12); margin-top: var(--s-3); }
+  .hero-ctas { flex-direction: column; gap: var(--s-2); margin-top: var(--s-4); }
+  .hero-ctas .btn { padding: 8px 12px; font-size: 11px; width: 100%; justify-content: center; }
+  .t-eyebrow { font-size: 10px; }
+  .hero-left-inner { max-width: 100%; }
 }
 
 /* — WhatsApp FAB — */
